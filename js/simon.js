@@ -4,7 +4,6 @@ var playerMoves = [];
 var computerMoves = [];
 var playerRound = 0;
 var strictMode = "no";
-//Time between computer moves. Can add accelerating speed at certain rounds if desired.
 var speed = 1000;
 
 //Function that resets the game when a player loses in strict mode
