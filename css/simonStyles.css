@@ -1,0 +1,107 @@
+/*** Simon CSS ***/
+
+body {
+  background-color: #bababa;
+}
+
+#gameBoard {
+  margin: 75px 0px;
+}
+
+.cell {
+  height: 300px;
+  border: 10px solid black;
+  border-collapse: collapse;
+}
+
+#cell-1 {
+  background-color: #00c400;
+  border-top-left-radius: 100%;
+}
+
+#cell-2 {
+  background-color: #c40000;
+  border-top-right-radius: 100%;
+}
+
+#cell-3 {
+  background-color: #c4c400;
+  border-bottom-left-radius: 100%;
+}
+
+#cell-4 {
+  background-color: #0000c4;
+  border-bottom-right-radius: 100%;
+}
+
+#centerCell {
+  position: relative;
+  bottom: 475px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#counterRow {
+  padding: 10px 0px 0px 0px;
+}
+
+#counter {
+  text-align: center;
+  font-size: 18px;
+  background-color: black;
+  color: red;
+  border-radius: 10px;
+  padding: 5px 0px;
+}
+
+#counterLabel {
+  font-size: 18px;
+  text-align: center;
+}
+
+#startRow {
+  padding: 20px 0px;
+}
+
+#resetRow {
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.cell1Flash {
+  background-color: #00ff00 !important;
+  box-shadow: -7px -7px 20px white;
+}
+
+.cell2Flash {
+  background-color: #ff0000 !important;
+  box-shadow: 7px -7px 20px white;
+}
+
+.cell3Flash {
+  background-color: #ffff00 !important;
+  box-shadow: 7px 7px 20px white;
+}
+
+.cell4Flash {
+  background-color: #0000ff !important;
+  box-shadow: 7px 7px 20px white;
+}
+
+@media screen and (max-width: 600px) {
+
+  .cell {
+    height: 200px;
+  }
+
+  #centerCell {
+    bottom: 375px;
+  }
+
+  #resetRow {
+    padding: 0px 0px;
+  }
+
+}
